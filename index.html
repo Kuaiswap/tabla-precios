@@ -1,4 +1,26 @@
-<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1P7leMCKBPdbXEK1zPPhjFR3"
-publishable-key="pk_live_51JuFsECKBPdbXEK1gDmpya1L7DquBfcQSUuLgvQ0E79uKQ2ckPrryORDOS1uKlukgoK3cz50yzbpMwmQ7Nte9CsJ00OxARLwKE">
-</stripe-pricing-table>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios con Stripe</title>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <style>
+        stripe-pricing-table {
+            width: 100%; /* Ocupa todo el ancho disponible */
+            overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+        }
+
+        @media (max-width: 600px) { /* Estilos específicos para pantallas pequeñas */
+            stripe-pricing-table {
+                font-size: 14px; /* Reduce el tamaño de la fuente para dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <stripe-pricing-table pricing-table-id="prctbl_1P7leMCKBPdbXEK1zPPhjFR3"
+    publishable-key="pk_live_51JuFsECKBPdbXEK1gDmpya1L7DquBfcQSUuLgvQ0E79uKQ2ckPrryORDOS1uKlukgoK3cz50yzbpMwmQ7Nte9CsJ00OxARLwKE">
+    </stripe-pricing-table>
+</body>
+</html>
